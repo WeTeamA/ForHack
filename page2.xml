@@ -1,0 +1,362 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<queryresult success='true'
+    error='false'
+    numpods='9'
+    datatypes='Chemical,Element'
+    timedout=''
+    timedoutpods=''
+    timing='3.807'
+    parsetiming='0.195'
+    parsetimedout='false'
+    recalculate=''
+    id='MSP8711a353874c16gh39e0000423gh1eiha3f640b'
+    host='https://www5b.wolframalpha.com'
+    server='28'
+    related='https://www5b.wolframalpha.com/api/v1/relatedQueries.jsp?id=MSPa8721a353874c16gh39e00004cia4d25h9e9ga753058145564852761731'
+    version='2.6'>
+ <pod title='Input interpretation'
+     scanner='Identity'
+     id='Input'
+     position='100'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <img src='https://www5b.wolframalpha.com/Calculate/MSP/MSP8731a353874c16gh39e000056cdf1f467cfa7i5?MSPStoreType=image/gif&amp;s=28'
+       alt='metasilicic acid'
+       title='metasilicic acid'
+       width='100'
+       height='18'
+       type='Default'
+       themes='1,2,3,4,5,6,7,8,9,10,11,12'
+       colorinvertable='true' />
+   <plaintext>metasilicic acid</plaintext>
+  </subpod>
+  <expressiontypes count='1'>
+   <expressiontype name='Default' />
+  </expressiontypes>
+ </pod>
+ <pod title='Chemical names and formulas'
+     scanner='Data'
+     id='ChemicalNamesFormulas:ChemicalData'
+     position='200'
+     error='false'
+     numsubpods='1'
+     primary='true'>
+  <subpod title=''>
+   <microsources>
+    <microsource>ChemicalData</microsource>
+   </microsources>
+   <datasources>
+    <datasource>PubChem</datasource>
+   </datasources>
+   <img src='https://www5b.wolframalpha.com/Calculate/MSP/MSP8741a353874c16gh39e000053044175b11hgadg?MSPStoreType=image/gif&amp;s=28'
+       alt='formula | H_2O_3Si
+name | metasilicic acid
+IUPAC name | dihydroxy-oxo-silane'
+       title='formula | H_2O_3Si
+name | metasilicic acid
+IUPAC name | dihydroxy-oxo-silane'
+       width='274'
+       height='101'
+       type='Grid'
+       themes='1,2,3,4,5,6,7,8,9,10,11,12'
+       colorinvertable='true' />
+   <plaintext>formula | H_2O_3Si
+name | metasilicic acid
+IUPAC name | dihydroxy-oxo-silane</plaintext>
+  </subpod>
+  <expressiontypes count='1'>
+   <expressiontype name='Grid' />
+  </expressiontypes>
+  <states count='1'>
+   <state name='More'
+       input='ChemicalNamesFormulas:ChemicalData__More' />
+  </states>
+ </pod>
+ <pod title='Structure diagram'
+     scanner='Data'
+     id='StructureDiagramPod:ChemicalData'
+     position='300'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <microsources>
+    <microsource>ChemicalData</microsource>
+   </microsources>
+   <datasources>
+    <datasource>PubChem</datasource>
+   </datasources>
+   <img src='https://www5b.wolframalpha.com/Calculate/MSP/MSP8751a353874c16gh39e0000110gb877b75i802i?MSPStoreType=image/gif&amp;s=28'
+       alt=''
+       title=''
+       width='104'
+       height='66'
+       type='Default'
+       themes='1,2,3,4,5,6,7,8,9,10,11,12'
+       colorinvertable='true' />
+   <plaintext></plaintext>
+  </subpod>
+  <expressiontypes count='1'>
+   <expressiontype name='Default' />
+  </expressiontypes>
+  <states count='4'>
+   <statelist count='2'
+       value='Skeletal structure'
+       delimiters=''>
+    <state name='Skeletal structure'
+        input='StructureDiagramPod:ChemicalData__Skeletal structure' />
+    <state name='Lewis structure'
+        input='StructureDiagramPod:ChemicalData__Lewis structure' />
+   </statelist>
+   <state name='Show bond information'
+       input='StructureDiagramPod:ChemicalData__Show bond information' />
+   <state name='Show graph properties'
+       input='StructureDiagramPod:ChemicalData__Show graph properties' />
+   <state name='Step-by-step'
+       input='StructureDiagramPod:ChemicalData__Step-by-step'
+       stepbystep='true' />
+  </states>
+ </pod>
+ <pod title='3D structure'
+     scanner='Data'
+     id='3DStructure:ChemicalData'
+     position='400'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <microsources>
+    <microsource>ChemicalData</microsource>
+   </microsources>
+   <datasources>
+    <datasource>PubChem</datasource>
+   </datasources>
+   <img src='https://www5b.wolframalpha.com/Calculate/MSP/MSP8761a353874c16gh39e00006199ababfd88gibc?MSPStoreType=image/gif&amp;s=28'
+       alt=''
+       title=''
+       width='400'
+       height='161'
+       type='Default'
+       themes='1,2,3,4,5,6,7,8,9,10,11,12'
+       colorinvertable='false' />
+   <plaintext></plaintext>
+  </subpod>
+  <expressiontypes count='1'>
+   <expressiontype name='Default' />
+  </expressiontypes>
+  <states count='2'>
+   <state name='Show bonds only'
+       input='3DStructure:ChemicalData__Show bonds only' />
+   <state name='Show space filling model'
+       input='3DStructure:ChemicalData__Show space filling model' />
+  </states>
+ </pod>
+ <pod title='Basic properties'
+     scanner='Data'
+     id='Basic:ChemicalData'
+     position='500'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <microsources>
+    <microsource>ChemicalData</microsource>
+   </microsources>
+   <datasources>
+    <datasource>SOLV-DB</datasource>
+    <datasource>PubChem</datasource>
+    <datasource>CRCHandbook</datasource>
+   </datasources>
+   <img src='https://www5b.wolframalpha.com/Calculate/MSP/MSP8771a353874c16gh39e00000gbfe9cg1bg9bi88?MSPStoreType=image/gif&amp;s=28'
+       alt='molar mass | 78.098 g/mol
+phase | solid (at STP)
+melting point | 1704 °C
+density | 1 g/cm^3'
+       title='molar mass | 78.098 g/mol
+phase | solid (at STP)
+melting point | 1704 °C
+density | 1 g/cm^3'
+       width='220'
+       height='132'
+       type='Grid'
+       themes='1,2,3,4,5,6,7,8,9,10,11,12'
+       colorinvertable='true' />
+   <plaintext>molar mass | 78.098 g/mol
+phase | solid (at STP)
+melting point | 1704 °C
+density | 1 g/cm^3</plaintext>
+  </subpod>
+  <expressiontypes count='1'>
+   <expressiontype name='Grid' />
+  </expressiontypes>
+  <infos count='1'>
+   <info>
+    <units count='2'>
+     <unit short='g/cm^3'
+         long='grams per cubic centimeter' />
+     <unit short='g/mol'
+         long='grams per mole' />
+     <img src='https://www5b.wolframalpha.com/Calculate/MSP/MSP8781a353874c16gh39e00000cf1db19265f10i1?MSPStoreType=image/gif&amp;s=28'
+         width='231'
+         height='48' />
+    </units>
+   </info>
+  </infos>
+ </pod>
+ <pod title='Solid properties (at STP)'
+     scanner='Data'
+     id='SolidProperties:ChemicalData'
+     position='600'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <microsources>
+    <microsource>ChemicalData</microsource>
+   </microsources>
+   <datasources>
+    <datasource>CRCHandbook</datasource>
+   </datasources>
+   <img src='https://www5b.wolframalpha.com/Calculate/MSP/MSP8791a353874c16gh39e00003814g0e2d6eaf565?MSPStoreType=image/gif&amp;s=28'
+       alt='density | 1 g/cm^3'
+       title='density | 1 g/cm^3'
+       width='145'
+       height='36'
+       type='Grid'
+       themes='1,2,3,4,5,6,7,8,9,10,11,12'
+       colorinvertable='true' />
+   <plaintext>density | 1 g/cm^3</plaintext>
+  </subpod>
+  <expressiontypes count='1'>
+   <expressiontype name='Grid' />
+  </expressiontypes>
+  <infos count='1'>
+   <info>
+    <units count='1'>
+     <unit short='g/cm^3'
+         long='grams per cubic centimeter' />
+     <img src='https://www5b.wolframalpha.com/Calculate/MSP/MSP8801a353874c16gh39e0000225hd436gf647f2d?MSPStoreType=image/gif&amp;s=28'
+         width='231'
+         height='27' />
+    </units>
+   </info>
+  </infos>
+ </pod>
+ <pod title='Thermodynamic properties'
+     scanner='Data'
+     id='Thermodynamics:ChemicalData'
+     position='700'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <microsources>
+    <microsource>ChemicalData</microsource>
+    <microsource>ElementData</microsource>
+   </microsources>
+   <datasources>
+    <datasource>PubChem</datasource>
+    <datasource>WebElements</datasource>
+   </datasources>
+   <img src='https://www5b.wolframalpha.com/Calculate/MSP/MSP8811a353874c16gh39e00005fi63e599a2af08f?MSPStoreType=image/gif&amp;s=28'
+       alt='specific free energy of formation Δ_fG° | solid | -13.99 kJ/g
+specific heat of formation Δ_fH° | solid | -15.22 kJ/g
+(at STP)'
+       title='specific free energy of formation Δ_fG° | solid | -13.99 kJ/g
+specific heat of formation Δ_fH° | solid | -15.22 kJ/g
+(at STP)'
+       width='417'
+       height='97'
+       type='Grid'
+       themes='1,2,3,4,5,6,7,8,9,10,11,12'
+       colorinvertable='true' />
+   <plaintext>specific free energy of formation Δ_fG° | solid | -13.99 kJ/g
+specific heat of formation Δ_fH° | solid | -15.22 kJ/g
+(at STP)</plaintext>
+  </subpod>
+  <expressiontypes count='1'>
+   <expressiontype name='Grid' />
+  </expressiontypes>
+  <states count='1'>
+   <state name='More'
+       input='Thermodynamics:ChemicalData__More' />
+  </states>
+  <infos count='1'>
+   <info>
+    <units count='1'>
+     <unit short='kJ/g'
+         long='kilojoules per gram' />
+     <img src='https://www5b.wolframalpha.com/Calculate/MSP/MSP8821a353874c16gh39e000053d1310hg6c45cc5?MSPStoreType=image/gif&amp;s=28'
+         width='170'
+         height='26' />
+    </units>
+   </info>
+  </infos>
+ </pod>
+ <pod title='Chemical identifiers'
+     scanner='Data'
+     id='ChemicalIdentifiers:ChemicalData'
+     position='800'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <microsources>
+    <microsource>ChemicalData</microsource>
+   </microsources>
+   <datasources>
+    <datasource>PubChem</datasource>
+   </datasources>
+   <img src='https://www5b.wolframalpha.com/Calculate/MSP/MSP8831a353874c16gh39e0000201hb7b95cf5c261?MSPStoreType=image/gif&amp;s=28'
+       alt='CAS number | 7699-41-4
+PubChem CID number | 14768
+SMILES identifier | O[Si](=O)O'
+       title='CAS number | 7699-41-4
+PubChem CID number | 14768
+SMILES identifier | O[Si](=O)O'
+       width='266'
+       height='100'
+       type='Grid'
+       themes='1,2,3,4,5,6,7,8,9,10,11,12'
+       colorinvertable='true' />
+   <plaintext>CAS number | 7699-41-4
+PubChem CID number | 14768
+SMILES identifier | O[Si](=O)O</plaintext>
+  </subpod>
+  <expressiontypes count='1'>
+   <expressiontype name='Grid' />
+  </expressiontypes>
+  <states count='1'>
+   <state name='More'
+       input='ChemicalIdentifiers:ChemicalData__More' />
+  </states>
+ </pod>
+ <pod title='Toxicity properties'
+     scanner='Data'
+     id='ToxicityProperties:ChemicalData'
+     position='900'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <microsources>
+    <microsource>ChemicalData</microsource>
+   </microsources>
+   <datasources>
+    <datasource>MacmillansChemicalAndPhysicalData</datasource>
+   </datasources>
+   <img src='https://www5b.wolframalpha.com/Calculate/MSP/MSP8841a353874c16gh39e00000h0ie1130fdd984h?MSPStoreType=image/gif&amp;s=28'
+       alt='RTECS classes | tumorigen | mutagen | primary irritant'
+       title='RTECS classes | tumorigen | mutagen | primary irritant'
+       width='424'
+       height='36'
+       type='Grid'
+       themes='1,2,3,4,5,6,7,8,9,10,11,12'
+       colorinvertable='true' />
+   <plaintext>RTECS classes | tumorigen | mutagen | primary irritant</plaintext>
+  </subpod>
+  <expressiontypes count='1'>
+   <expressiontype name='Grid' />
+  </expressiontypes>
+ </pod>
+ <sources count='2'>
+  <source url='https://www5b.wolframalpha.com/sources/ChemicalDataSourceInformationNotes.html'
+      text='Chemical data' />
+  <source url='https://www5b.wolframalpha.com/sources/ElementDataSourceInformationNotes.html'
+      text='Element data' />
+ </sources>
+</queryresult>
