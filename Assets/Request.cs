@@ -73,7 +73,7 @@ public class Request : MonoBehaviour
         MatchCollection matches = regex.Matches(childnode.InnerText);
         if (matches.Count > 0)
         {
-            string x = matches[0].Value;
+            string x = matches[1].Value;
             int x1 = x.Length - 3;
             x = x.Remove(x1);
             return double.Parse(x);
@@ -142,9 +142,9 @@ public class Request : MonoBehaviour
         // var url = "http://api.wolframalpha.com/v2/query?input=NaCl&appid=K58ETV-GTPAJVATGW";
 
 
-        get_http_write("http://api.wolframalpha.com/v2/query?input=H2SiO3&appid=K58ETV-GTPAJVATGW", "page2.xml");
+        get_http_write("http://api.wolframalpha.com/v2/query?input=KCl&appid=K58ETV-GTPAJVATGW", "page3.xml");
 
-        FillArray(Substances, "page2.xml");
+        FillArray(Substances, "page3.xml");
 
 
 

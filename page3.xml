@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<queryresult success='true'
+    error='false'
+    numpods='7'
+    datatypes='Chemical,Element'
+    timedout='Data,Character'
+    timedoutpods=''
+    timing='4.626'
+    parsetiming='0.114'
+    parsetimedout='false'
+    recalculate='https://www5b.wolframalpha.com/api/v1/recalc.jsp?id=MSPa833323g9cgd573584e9900006124a37fec1d05b08571982524198846795'
+    id='MSP833423g9cgd573584e990000467603id3i0ii044'
+    host='https://www5b.wolframalpha.com'
+    server='1'
+    related='https://www5b.wolframalpha.com/api/v1/relatedQueries.jsp?id=MSPa833523g9cgd573584e99000035i0a4af136cd6148571982524198846795'
+    version='2.6'>
+ <pod title='Input interpretation'
+     scanner='Identity'
+     id='Input'
+     position='100'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <img src='https://www5b.wolframalpha.com/Calculate/MSP/MSP833623g9cgd573584e99000022g5bid3h00aci45?MSPStoreType=image/gif&amp;s=1'
+       alt='potassium chloride'
+       title='potassium chloride'
+       width='124'
+       height='18'
+       type='Default'
+       themes='1,2,3,4,5,6,7,8,9,10,11,12'
+       colorinvertable='true' />
+   <plaintext>potassium chloride</plaintext>
+  </subpod>
+  <expressiontypes count='1'>
+   <expressiontype name='Default' />
+  </expressiontypes>
+ </pod>
+ <pod title='Chemical names and formulas'
+     scanner='Data'
+     id='ChemicalNamesFormulas:ChemicalData'
+     position='200'
+     error='false'
+     numsubpods='1'
+     primary='true'>
+  <subpod title=''>
+   <microsources>
+    <microsource>ChemicalData</microsource>
+   </microsources>
+   <datasources>
+    <datasource>PubChem</datasource>
+   </datasources>
+   <img src='https://www5b.wolframalpha.com/Calculate/MSP/MSP833723g9cgd573584e990000277b3g4f1087f9id?MSPStoreType=image/gif&amp;s=1'
+       alt='formula | KCl
+Hill formula | ClK
+name | potassium chloride'
+       title='formula | KCl
+Hill formula | ClK
+name | potassium chloride'
+       width='253'
+       height='100'
+       type='Grid'
+       themes='1,2,3,4,5,6,7,8,9,10,11,12'
+       colorinvertable='true' />
+   <plaintext>formula | KCl
+Hill formula | ClK
+name | potassium chloride</plaintext>
+  </subpod>
+  <expressiontypes count='1'>
+   <expressiontype name='Grid' />
+  </expressiontypes>
+  <states count='1'>
+   <state name='More'
+       input='ChemicalNamesFormulas:ChemicalData__More' />
+  </states>
+ </pod>
+ <pod title='Structure diagram'
+     scanner='Data'
+     id='StructureDiagramPod:ChemicalData'
+     position='300'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <microsources>
+    <microsource>ChemicalData</microsource>
+   </microsources>
+   <datasources>
+    <datasource>PubChem</datasource>
+   </datasources>
+   <img src='https://www5b.wolframalpha.com/Calculate/MSP/MSP833823g9cgd573584e99000025787646c2964f7d?MSPStoreType=image/gif&amp;s=1'
+       alt=''
+       title=''
+       width='79'
+       height='30'
+       type='Default'
+       themes='1,2,3,4,5,6,7,8,9,10,11,12'
+       colorinvertable='true' />
+   <plaintext></plaintext>
+  </subpod>
+  <expressiontypes count='1'>
+   <expressiontype name='Default' />
+  </expressiontypes>
+ </pod>
+ <pod title='Basic properties'
+     scanner='Data'
+     id='Basic:ChemicalData'
+     position='400'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <microsources>
+    <microsource>ChemicalData</microsource>
+   </microsources>
+   <datasources>
+    <datasource>SOLV-DB</datasource>
+    <datasource>PubChem</datasource>
+    <datasource>CRCHandbook</datasource>
+   </datasources>
+   <img src='https://www5b.wolframalpha.com/Calculate/MSP/MSP833923g9cgd573584e990000252ee0bacea22010?MSPStoreType=image/gif&amp;s=1'
+       alt='molar mass | 74.55 g/mol
+phase | solid (at STP)
+melting point | 770 °C
+boiling point | 1420 °C
+density | 1.98 g/cm^3
+solubility in water | soluble'
+       title='molar mass | 74.55 g/mol
+phase | solid (at STP)
+melting point | 770 °C
+boiling point | 1420 °C
+density | 1.98 g/cm^3
+solubility in water | soluble'
+       width='249'
+       height='196'
+       type='Grid'
+       themes='1,2,3,4,5,6,7,8,9,10,11,12'
+       colorinvertable='true' />
+   <plaintext>molar mass | 74.55 g/mol
+phase | solid (at STP)
+melting point | 770 °C
+boiling point | 1420 °C
+density | 1.98 g/cm^3
+solubility in water | soluble</plaintext>
+  </subpod>
+  <expressiontypes count='1'>
+   <expressiontype name='Grid' />
+  </expressiontypes>
+  <infos count='1'>
+   <info>
+    <units count='2'>
+     <unit short='g/cm^3'
+         long='grams per cubic centimeter' />
+     <unit short='g/mol'
+         long='grams per mole' />
+     <img src='https://www5b.wolframalpha.com/Calculate/MSP/MSP834023g9cgd573584e9900004fa08429ef3cg54b?MSPStoreType=image/gif&amp;s=1'
+         width='231'
+         height='48' />
+    </units>
+   </info>
+  </infos>
+ </pod>
+ <pod title='Basic drug properties'
+     scanner='Data'
+     id='DrugNamesProperties:ChemicalData'
+     position='500'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <microsources>
+    <microsource>ChemicalData</microsource>
+   </microsources>
+   <img src='https://www5b.wolframalpha.com/Calculate/MSP/MSP834123g9cgd573584e99000062gbb7957b1898ii?MSPStoreType=image/gif&amp;s=1'
+       alt='approval status | approved | small molecule | withdrawn
+dosage forms | oral: capsule, extended release | intravenous: liquid | oral: liquid | sublingual: liquid | oral: powder, for solution | intravenous: solution | oral: solution | oral: solution / drops | oral: tablet | oral: tablet, extended release'
+       title='approval status | approved | small molecule | withdrawn
+dosage forms | oral: capsule, extended release | intravenous: liquid | oral: liquid | sublingual: liquid | oral: powder, for solution | intravenous: solution | oral: solution | oral: solution / drops | oral: tablet | oral: tablet, extended release'
+       width='546'
+       height='136'
+       type='Grid'
+       themes='1,2,3,4,5,6,7,8,9,10,11,12'
+       colorinvertable='true' />
+   <plaintext>approval status | approved | small molecule | withdrawn
+dosage forms | oral: capsule, extended release | intravenous: liquid | oral: liquid | sublingual: liquid | oral: powder, for solution | intravenous: solution | oral: solution | oral: solution / drops | oral: tablet | oral: tablet, extended release</plaintext>
+  </subpod>
+  <expressiontypes count='1'>
+   <expressiontype name='Grid' />
+  </expressiontypes>
+  <states count='1'>
+   <state name='More'
+       input='DrugNamesProperties:ChemicalData__More' />
+  </states>
+ </pod>
+ <pod title='Solid properties (at STP)'
+     scanner='Data'
+     id='SolidProperties:ChemicalData'
+     position='600'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <microsources>
+    <microsource>ChemicalData</microsource>
+   </microsources>
+   <datasources>
+    <datasource>CRCHandbook</datasource>
+   </datasources>
+   <img src='https://www5b.wolframalpha.com/Calculate/MSP/MSP834223g9cgd573584e9900001bfag5ec9h3g0ehb?MSPStoreType=image/gif&amp;s=1'
+       alt='density | 1.98 g/cm^3'
+       title='density | 1.98 g/cm^3'
+       width='165'
+       height='36'
+       type='Grid'
+       themes='1,2,3,4,5,6,7,8,9,10,11,12'
+       colorinvertable='true' />
+   <plaintext>density | 1.98 g/cm^3</plaintext>
+  </subpod>
+  <expressiontypes count='1'>
+   <expressiontype name='Grid' />
+  </expressiontypes>
+  <infos count='1'>
+   <info>
+    <units count='1'>
+     <unit short='g/cm^3'
+         long='grams per cubic centimeter' />
+     <img src='https://www5b.wolframalpha.com/Calculate/MSP/MSP834323g9cgd573584e990000104fdb589hecd0d3?MSPStoreType=image/gif&amp;s=1'
+         width='231'
+         height='27' />
+    </units>
+   </info>
+  </infos>
+ </pod>
+ <pod title='Thermodynamic properties'
+     scanner='Data'
+     id='Thermodynamics:ChemicalData'
+     position='700'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <microsources>
+    <microsource>ChemicalData</microsource>
+    <microsource>ElementData</microsource>
+   </microsources>
+   <datasources>
+    <datasource>PubChem</datasource>
+    <datasource>WebElements</datasource>
+   </datasources>
+   <img src='https://www5b.wolframalpha.com/Calculate/MSP/MSP834423g9cgd573584e990000354h0d440h0d1207?MSPStoreType=image/gif&amp;s=1'
+       alt='specific heat capacity c_p | gas | 0.4896 J/(g K)
+specific free energy of formation Δ_fG° | gas | -3.13 kJ/g
+ | solid | -5.48 kJ/g
+specific heat of formation Δ_fH° | gas | -2.879 kJ/g
+ | solid | -5.855 kJ/g
+specific entropy S° | solid | 1.113 J/(g K)
+specific heat of fusion | 0.3525 kJ/g | 
+(at STP)'
+       title='specific heat capacity c_p | gas | 0.4896 J/(g K)
+specific free energy of formation Δ_fG° | gas | -3.13 kJ/g
+ | solid | -5.48 kJ/g
+specific heat of formation Δ_fH° | gas | -2.879 kJ/g
+ | solid | -5.855 kJ/g
+specific entropy S° | solid | 1.113 J/(g K)
+specific heat of fusion | 0.3525 kJ/g | 
+(at STP)'
+       width='428'
+       height='247'
+       type='Grid'
+       themes='1,2,3,4,5,6,7,8,9,10,11,12'
+       colorinvertable='true' />
+   <plaintext>specific heat capacity c_p | gas | 0.4896 J/(g K)
+specific free energy of formation Δ_fG° | gas | -3.13 kJ/g
+ | solid | -5.48 kJ/g
+specific heat of formation Δ_fH° | gas | -2.879 kJ/g
+ | solid | -5.855 kJ/g
+specific entropy S° | solid | 1.113 J/(g K)
+specific heat of fusion | 0.3525 kJ/g | 
+(at STP)</plaintext>
+  </subpod>
+  <expressiontypes count='1'>
+   <expressiontype name='Grid' />
+  </expressiontypes>
+  <states count='1'>
+   <state name='More'
+       input='Thermodynamics:ChemicalData__More' />
+  </states>
+  <infos count='1'>
+   <info>
+    <units count='3'>
+     <unit short='J/(g K)'
+         long='joules per gram kelvin' />
+     <unit short='J/(g K)'
+         long='joules per gram kelvin difference' />
+     <unit short='kJ/g'
+         long='kilojoules per gram' />
+     <img src='https://www5b.wolframalpha.com/Calculate/MSP/MSP834523g9cgd573584e990000182ieif3b28d9ai1?MSPStoreType=image/gif&amp;s=1'
+         width='257'
+         height='68' />
+    </units>
+   </info>
+  </infos>
+ </pod>
+ <assumptions count='1'>
+  <assumption type='Clash'
+      word='KCl'
+      template='Assuming &quot;${word}&quot; is ${desc1}. Use as ${desc2} instead'
+      count='2'>
+   <value name='Chemical'
+       desc='a chemical compound'
+       input='*C.KCl-_*Chemical-' />
+   <value name='FamousPhysicsProblem'
+       desc=' referring to a physical principle'
+       input='*C.KCl-_*FamousPhysicsProblem-' />
+  </assumption>
+ </assumptions>
+ <sources count='2'>
+  <source url='https://www5b.wolframalpha.com/sources/ChemicalDataSourceInformationNotes.html'
+      text='Chemical data' />
+  <source url='https://www5b.wolframalpha.com/sources/ElementDataSourceInformationNotes.html'
+      text='Element data' />
+ </sources>
+</queryresult>
