@@ -67,11 +67,13 @@ public class Request : MonoBehaviour
         HttpWebResponse resp = (HttpWebResponse)req.GetResponse();
         Stream stream = resp.GetResponseStream();
         StreamReader sr = new StreamReader(stream);
-        resp.Close();
+        //resp.Close();
         string text = sr.ReadToEnd();
-        sr.Close();
+       // sr.Close();
         using (var sw = new StreamWriter("page.xml"))
             sw.Write(text); //пишем на комп
+        resp.Close();
+        sr.Close();
     }
    
     // Update is called once per frame
