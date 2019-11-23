@@ -73,13 +73,30 @@ public class Request : MonoBehaviour
         MatchCollection matches = regex.Matches(childnode.InnerText);
         if (matches.Count > 0)
         {
-            string x = matches[1].Value;
+            
+            string x = matches[matches.Count-1].Value; //достаем послдений элемент массива
             int x1 = x.Length - 3;
             x = x.Remove(x1);
             return double.Parse(x);
         }
         else
             return 100;
+    }
+
+    public string Name(XmlNode childnode)
+    {
+        string[] strs = new string[childnode.InnerText.Length];
+        string str = childnode.InnerText;
+        strs = str.Split('|');
+        str = "";
+        foreach (char st in strs[strs.Length-1])
+        {
+            str += st;
+        }
+
+        str = str.Remove(0, 1);
+        return str;
+
     }
 
     public void get_http_write(string url, string page)
@@ -107,6 +124,7 @@ public class Request : MonoBehaviour
         doc.Load("C:/ForHack/ForHack/" + page);
 
         XmlElement xRoot = doc.DocumentElement;
+        /*
         foreach (XmlNode childnode in xRoot)
         {
             if (childnode.Name == "pod" && childnode.Attributes.GetNamedItem("title").Value == "Basic properties")
@@ -132,6 +150,27 @@ public class Request : MonoBehaviour
                 }
             }
         }
+       */
+        foreach (XmlNode childnode in xRoot)
+        {
+            if (childnode.Name == "pod" && childnode.Attributes.GetNamedItem("title").Value == "Chemical names and formulas")
+            {
+                foreach (XmlNode childnode2 in childnode)
+                {
+                    if (childnode2.Name == "subpod")
+                    {
+                        foreach (XmlNode childnode3 in childnode2)
+                        {
+                            if (childnode3.Name == "plaintext")
+                            {
+                                print(childnode3.InnerText);
+                                string water = Name(childnode3);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     // Start is called before the first frame update
     void Start()
@@ -141,10 +180,9 @@ public class Request : MonoBehaviour
         //APPID: K58ETV - GTPAJVATGW
         // var url = "http://api.wolframalpha.com/v2/query?input=NaCl&appid=K58ETV-GTPAJVATGW";
 
+        get_http_write("http://api.wolframalpha.com/v2/query?input=Ag+%20+%20NO3-&appid=K58ETV-GTPAJVATGW", "page5.xml");
 
-        get_http_write("http://api.wolframalpha.com/v2/query?input=H+%20+%20OH-&appid=K58ETV-GTPAJVATGW", "page4.xml");
-
-        FillArray(Substances, "page4.xml");
+        FillArray(Substances, "page5.xml");
 
 
     
