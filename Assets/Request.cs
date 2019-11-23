@@ -118,30 +118,45 @@ public class Request : MonoBehaviour
         sr.Close();
     }
 
-    public void FillArray(List<Substance> Subs, string page)
+    /// <summary>
+    /// Заполняет массив следующим списком наименований xml файлов
+    /// </summary>
+    /// <param name="Subs"></param>
+    /// <param name="pages"></param>
+    public void FillArray(List<Substance> Subs, List<string> pages)
     {
-        var doc = new XmlDocument();
-        doc.Load("C:/ForHack/ForHack/" + page);
-
-        XmlElement xRoot = doc.DocumentElement;
-        /*
-        foreach (XmlNode childnode in xRoot)
+        List<XmlDocument> docs = new List<XmlDocument>(pages.Count);
+        int i = 0;
+        foreach (XmlDocument doc in docs)
         {
-            if (childnode.Name == "pod" && childnode.Attributes.GetNamedItem("title").Value == "Basic properties")
+            doc.Load("C:/ForHack/ForHack/" + pages[i]);// ПУТЬ-------------------------------------------------------------------------------
+            bool solubility = false;
+            double temp = 100;
+            bool aggregate = false;
+            string name = "noname";
+            XmlElement xRoot = doc.DocumentElement;
+
+            foreach (XmlNode childnode in xRoot)
             {
-                foreach (XmlNode childnode2 in childnode.ChildNodes)
+                if (childnode.Name == "pod" && childnode.Attributes.GetNamedItem("title").Value == "Basic properties")
                 {
-                    if (childnode2.Name == "subpod")
+                    foreach (XmlNode childnode2 in childnode.ChildNodes)
                     {
-                        foreach (XmlNode childnode3 in childnode.ChildNodes)
+                        if (childnode2.Name == "subpod")
                         {
-                            if (childnode3.Name == "subpod")
+                            foreach (XmlNode childnode3 in childnode.ChildNodes)
                             {
-                                foreach (XmlNode childnode4 in childnode3.ChildNodes)
+                                if (childnode3.Name == "subpod")
                                 {
-                                    if (childnode4.Name == "plaintext")
+                                    foreach (XmlNode childnode4 in childnode3.ChildNodes)
                                     {
-                                        Subs.Add(new Substance(null, Solubility(childnode4), Temp(childnode4), Aggregate(childnode4)));
+                                        if (childnode4.Name == "plaintext")
+                                        {
+                                            //Subs.Add(new Substance(null, Solubility(childnode4), Temp(childnode4), Aggregate(childnode4)));
+                                            solubility = Solubility(childnode4);
+                                            temp = Temp(childnode4);
+                                            aggregate = Aggregate(childnode4);
+                                        }
                                     }
                                 }
                             }
@@ -149,27 +164,27 @@ public class Request : MonoBehaviour
                     }
                 }
             }
-        }
-       */
-        foreach (XmlNode childnode in xRoot)
-        {
-            if (childnode.Name == "pod" && childnode.Attributes.GetNamedItem("title").Value == "Chemical names and formulas")
+
+            foreach (XmlNode childnode in xRoot)
             {
-                foreach (XmlNode childnode2 in childnode)
+                if (childnode.Name == "pod" && childnode.Attributes.GetNamedItem("title").Value == "Chemical names and formulas")
                 {
-                    if (childnode2.Name == "subpod")
+                    foreach (XmlNode childnode2 in childnode)
                     {
-                        foreach (XmlNode childnode3 in childnode2)
+                        if (childnode2.Name == "subpod")
                         {
-                            if (childnode3.Name == "plaintext")
+                            foreach (XmlNode childnode3 in childnode2)
                             {
-                                print(childnode3.InnerText);
-                                string water = Name(childnode3);
+                                if (childnode3.Name == "plaintext")
+                                {
+                                    name = Name(childnode3);
+                                }
                             }
                         }
                     }
                 }
             }
+            Subs.Add(new Substance(name, solubility, temp, aggregate));
         }
     }
     // Start is called before the first frame update
