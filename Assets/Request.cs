@@ -40,13 +40,8 @@ public class Request : MonoBehaviour
         doc.Load("C:/ForHack/ForHack/page.xml");
 
         XmlElement xRoot = doc.DocumentElement;
-        // обход всех узлов в корневом элементе
-        foreach (XmlNode xnode in xRoot)
+        foreach (XmlNode childnode in xRoot)
         {
-            // обходим все дочерние узлы элемента user
-            foreach (XmlNode childnode in xnode.ChildNodes)
-            {
-                // если узел - company
                 if (childnode.Name == "pod" && childnode.Attributes.GetNamedItem("title").Value == "Basic properties")
                 {
                     foreach (XmlNode childnode2 in childnode.ChildNodes)
@@ -55,26 +50,29 @@ public class Request : MonoBehaviour
                         {
                             foreach (XmlNode childnode3 in childnode.ChildNodes)
                             {
-                                if (childnode3.Name == "plaintext")
+                                if (childnode3.Name == "subpod")
                                 {
-                                    print(childnode3.InnerText);
+                                foreach (XmlNode childnode4 in childnode3.ChildNodes)
+                                {
+                                    if (childnode4.Name == "plaintext")
+                                    {
+                                        print(childnode3.InnerText);
+                                    }
+                                }
                                 }
                             }
                         }
                     }
                 }
-                // если узел age
-                if (childnode.Name == "age")
-                {
+            
 
-                }
-            }
-
+            /*
             for (int i = 0; i < Substances.Count; i++) //Заполнение массива
             {
                 //Substances[i].temp = 
             }
             //print(get_http("http://api.wolframalpha.com/v2/query?input=NaCl&appid=HP44EW-XHHUV3698T"));
+            */
         }
 
         /*
