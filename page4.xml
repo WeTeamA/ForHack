@@ -1,0 +1,367 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<queryresult success='true'
+    error='false'
+    numpods='7'
+    datatypes='Chemical,Element'
+    timedout='Data,Character'
+    timedoutpods=''
+    timing='5.344'
+    parsetiming='0.538'
+    parsetimedout='false'
+    recalculate='https://www4c.wolframalpha.com/api/v1/recalc.jsp?id=MSPa9623144b49gi5e0ca7e300003c4g6003cib1dgh71652639493352128523'
+    id='MSP9624144b49gi5e0ca7e300000ifae791020hif89'
+    host='https://www4c.wolframalpha.com'
+    server='48'
+    related='https://www4c.wolframalpha.com/api/v1/relatedQueries.jsp?id=MSPa9625144b49gi5e0ca7e300002777he5ie9d1diif1652639493352128523'
+    version='2.6'>
+ <pod title='Input interpretation'
+     scanner='Identity'
+     id='Input'
+     position='100'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <img src='https://www4c.wolframalpha.com/Calculate/MSP/MSP9626144b49gi5e0ca7e300000fg348h6f335h822?MSPStoreType=image/gif&amp;s=48'
+       alt='water'
+       title='water'
+       width='38'
+       height='18'
+       type='Default'
+       themes='1,2,3,4,5,6,7,8,9,10,11,12'
+       colorinvertable='true' />
+   <plaintext>water</plaintext>
+  </subpod>
+  <expressiontypes count='1'>
+   <expressiontype name='Default' />
+  </expressiontypes>
+ </pod>
+ <pod title='Chemical names and formulas'
+     scanner='Data'
+     id='ChemicalNamesFormulas:ChemicalData'
+     position='200'
+     error='false'
+     numsubpods='1'
+     primary='true'>
+  <subpod title=''>
+   <microsources>
+    <microsource>ChemicalData</microsource>
+   </microsources>
+   <datasources>
+    <datasource>PubChem</datasource>
+   </datasources>
+   <img src='https://www4c.wolframalpha.com/Calculate/MSP/MSP9627144b49gi5e0ca7e300001ca8995e1a249456?MSPStoreType=image/gif&amp;s=48'
+       alt='formula | H_2O
+name | water'
+       title='formula | H_2O
+name | water'
+       width='139'
+       height='69'
+       type='Grid'
+       themes='1,2,3,4,5,6,7,8,9,10,11,12'
+       colorinvertable='true' />
+   <plaintext>formula | H_2O
+name | water</plaintext>
+  </subpod>
+  <expressiontypes count='1'>
+   <expressiontype name='Grid' />
+  </expressiontypes>
+  <states count='1'>
+   <state name='More'
+       input='ChemicalNamesFormulas:ChemicalData__More' />
+  </states>
+ </pod>
+ <pod title='Structure diagram'
+     scanner='Data'
+     id='StructureDiagramPod:ChemicalData'
+     position='300'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <microsources>
+    <microsource>ChemicalData</microsource>
+   </microsources>
+   <datasources>
+    <datasource>PubChem</datasource>
+   </datasources>
+   <img src='https://www4c.wolframalpha.com/Calculate/MSP/MSP9628144b49gi5e0ca7e300005dg5e32b5a8i4ggc?MSPStoreType=image/gif&amp;s=48'
+       alt=''
+       title=''
+       width='79'
+       height='44'
+       type='Default'
+       themes='1,2,3,4,5,6,7,8,9,10,11,12'
+       colorinvertable='true' />
+   <plaintext></plaintext>
+  </subpod>
+  <expressiontypes count='1'>
+   <expressiontype name='Default' />
+  </expressiontypes>
+  <states count='4'>
+   <statelist count='2'
+       value='Skeletal structure'
+       delimiters=''>
+    <state name='Skeletal structure'
+        input='StructureDiagramPod:ChemicalData__Skeletal structure' />
+    <state name='Lewis structure'
+        input='StructureDiagramPod:ChemicalData__Lewis structure' />
+   </statelist>
+   <state name='Show bond information'
+       input='StructureDiagramPod:ChemicalData__Show bond information' />
+   <state name='Show graph properties'
+       input='StructureDiagramPod:ChemicalData__Show graph properties' />
+   <state name='Step-by-step'
+       input='StructureDiagramPod:ChemicalData__Step-by-step'
+       stepbystep='true' />
+  </states>
+ </pod>
+ <pod title='3D structure'
+     scanner='Data'
+     id='3DStructure:ChemicalData'
+     position='400'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <microsources>
+    <microsource>ChemicalData</microsource>
+   </microsources>
+   <datasources>
+    <datasource>PubChem</datasource>
+   </datasources>
+   <img src='https://www4c.wolframalpha.com/Calculate/MSP/MSP9629144b49gi5e0ca7e300005e38de138h66546c?MSPStoreType=image/gif&amp;s=48'
+       alt=''
+       title=''
+       width='400'
+       height='98'
+       type='Default'
+       themes='1,2,3,4,5,6,7,8,9,10,11,12'
+       colorinvertable='false' />
+   <plaintext></plaintext>
+  </subpod>
+  <expressiontypes count='1'>
+   <expressiontype name='Default' />
+  </expressiontypes>
+  <states count='2'>
+   <state name='Show bonds only'
+       input='3DStructure:ChemicalData__Show bonds only' />
+   <state name='Show space filling model'
+       input='3DStructure:ChemicalData__Show space filling model' />
+  </states>
+ </pod>
+ <pod title='Basic properties'
+     scanner='Data'
+     id='Basic:ChemicalData'
+     position='500'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <microsources>
+    <microsource>ChemicalData</microsource>
+   </microsources>
+   <datasources>
+    <datasource>SOLV-DB</datasource>
+    <datasource>PubChem</datasource>
+    <datasource>CRCHandbook</datasource>
+   </datasources>
+   <img src='https://www4c.wolframalpha.com/Calculate/MSP/MSP9630144b49gi5e0ca7e300001ib45h7igcg0d41a?MSPStoreType=image/gif&amp;s=48'
+       alt='molar mass | 18.015 g/mol
+phase | liquid (at STP)
+melting point | 0 °C
+boiling point | 99.9839 °C
+density | 1 g/cm^3'
+       title='molar mass | 18.015 g/mol
+phase | liquid (at STP)
+melting point | 0 °C
+boiling point | 99.9839 °C
+density | 1 g/cm^3'
+       width='226'
+       height='164'
+       type='Grid'
+       themes='1,2,3,4,5,6,7,8,9,10,11,12'
+       colorinvertable='true' />
+   <plaintext>molar mass | 18.015 g/mol
+phase | liquid (at STP)
+melting point | 0 °C
+boiling point | 99.9839 °C
+density | 1 g/cm^3</plaintext>
+  </subpod>
+  <expressiontypes count='1'>
+   <expressiontype name='Grid' />
+  </expressiontypes>
+  <states count='1'>
+   <state name='More'
+       input='Basic:ChemicalData__More' />
+  </states>
+  <infos count='1'>
+   <info>
+    <units count='2'>
+     <unit short='g/cm^3'
+         long='grams per cubic centimeter' />
+     <unit short='g/mol'
+         long='grams per mole' />
+     <img src='https://www4c.wolframalpha.com/Calculate/MSP/MSP9631144b49gi5e0ca7e3000033040g33gc8d5901?MSPStoreType=image/gif&amp;s=48'
+         width='231'
+         height='48' />
+    </units>
+   </info>
+  </infos>
+ </pod>
+ <pod title='Liquid properties (at STP)'
+     scanner='Data'
+     id='LiquidProperties:ChemicalData'
+     position='600'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <microsources>
+    <microsource>ChemicalData</microsource>
+   </microsources>
+   <datasources>
+    <datasource>CRCHandbook</datasource>
+   </datasources>
+   <img src='https://www4c.wolframalpha.com/Calculate/MSP/MSP9632144b49gi5e0ca7e3000058di2f0g04c3b92i?MSPStoreType=image/gif&amp;s=48'
+       alt='density | 1 g/cm^3
+vapor pressure | 17.54 mmHg (at 20 °C)
+dynamic viscosity | 8.9×10^-4 Pa s (at 25 °C)
+surface tension | 0.0728 N/m
+refractive index | 1.333
+UV cutoff wavelength | 191 nm'
+       title='density | 1 g/cm^3
+vapor pressure | 17.54 mmHg (at 20 °C)
+dynamic viscosity | 8.9×10^-4 Pa s (at 25 °C)
+surface tension | 0.0728 N/m
+refractive index | 1.333
+UV cutoff wavelength | 191 nm'
+       width='340'
+       height='196'
+       type='Grid'
+       themes='1,2,3,4,5,6,7,8,9,10,11,12'
+       colorinvertable='true' />
+   <plaintext>density | 1 g/cm^3
+vapor pressure | 17.54 mmHg (at 20 °C)
+dynamic viscosity | 8.9×10^-4 Pa s (at 25 °C)
+surface tension | 0.0728 N/m
+refractive index | 1.333
+UV cutoff wavelength | 191 nm</plaintext>
+  </subpod>
+  <expressiontypes count='1'>
+   <expressiontype name='Grid' />
+  </expressiontypes>
+  <infos count='1'>
+   <info>
+    <units count='5'>
+     <unit short='g/cm^3'
+         long='grams per cubic centimeter' />
+     <unit short='mmHg'
+         long='millimeters of mercury' />
+     <unit short='nm'
+         long='nanometers' />
+     <unit short='N/m'
+         long='newtons per meter' />
+     <unit short='Pa s'
+         long='pascal seconds' />
+     <img src='https://www4c.wolframalpha.com/Calculate/MSP/MSP9633144b49gi5e0ca7e300002i2399bf598f5031?MSPStoreType=image/gif&amp;s=48'
+         width='234'
+         height='111' />
+    </units>
+   </info>
+  </infos>
+  <definitions count='1'>
+   <definition word='UV cutoff wavelength'
+       desc='the wavelength below which a specified solvent absorbs all light' />
+  </definitions>
+ </pod>
+ <pod title='Thermodynamic properties'
+     scanner='Data'
+     id='Thermodynamics:ChemicalData'
+     position='700'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <microsources>
+    <microsource>ChemicalData</microsource>
+    <microsource>ElementData</microsource>
+   </microsources>
+   <datasources>
+    <datasource>PubChem</datasource>
+    <datasource>WebElements</datasource>
+   </datasources>
+   <img src='https://www4c.wolframalpha.com/Calculate/MSP/MSP9634144b49gi5e0ca7e3000036ca91109bega39a?MSPStoreType=image/gif&amp;s=48'
+       alt='specific heat capacity c_p | gas | 1.865 J/(g K)
+ | liquid | 4.18 J/(g K)
+specific free energy of formation Δ_fG° | gas | -12.69 kJ/g
+ | liquid | -13.16 kJ/g
+specific heat of formation Δ_fH° | liquid | -15.87 kJ/g
+ | gas | -13.42 kJ/g
+specific entropy S° | gas | 10.48 J/(g K)
+ | liquid | 3.881 J/(g K)
+specific heat of vaporization | 2.23 kJ/g | 
+specific heat of fusion | 0.334 kJ/g | 
+critical temperature | 647.14 K | 
+critical pressure | 22.064 MPa | 
+(at STP)'
+       title='specific heat capacity c_p | gas | 1.865 J/(g K)
+ | liquid | 4.18 J/(g K)
+specific free energy of formation Δ_fG° | gas | -12.69 kJ/g
+ | liquid | -13.16 kJ/g
+specific heat of formation Δ_fH° | liquid | -15.87 kJ/g
+ | gas | -13.42 kJ/g
+specific entropy S° | gas | 10.48 J/(g K)
+ | liquid | 3.881 J/(g K)
+specific heat of vaporization | 2.23 kJ/g | 
+specific heat of fusion | 0.334 kJ/g | 
+critical temperature | 647.14 K | 
+critical pressure | 22.064 MPa | 
+(at STP)'
+       width='427'
+       height='397'
+       type='Grid'
+       themes='1,2,3,4,5,6,7,8,9,10,11,12'
+       colorinvertable='true' />
+   <plaintext>specific heat capacity c_p | gas | 1.865 J/(g K)
+ | liquid | 4.18 J/(g K)
+specific free energy of formation Δ_fG° | gas | -12.69 kJ/g
+ | liquid | -13.16 kJ/g
+specific heat of formation Δ_fH° | liquid | -15.87 kJ/g
+ | gas | -13.42 kJ/g
+specific entropy S° | gas | 10.48 J/(g K)
+ | liquid | 3.881 J/(g K)
+specific heat of vaporization | 2.23 kJ/g | 
+specific heat of fusion | 0.334 kJ/g | 
+critical temperature | 647.14 K | 
+critical pressure | 22.064 MPa | 
+(at STP)</plaintext>
+  </subpod>
+  <expressiontypes count='1'>
+   <expressiontype name='Grid' />
+  </expressiontypes>
+  <states count='1'>
+   <state name='More'
+       input='Thermodynamics:ChemicalData__More' />
+  </states>
+  <infos count='1'>
+   <info>
+    <units count='5'>
+     <unit short='J/(g K)'
+         long='joules per gram kelvin' />
+     <unit short='J/(g K)'
+         long='joules per gram kelvin difference' />
+     <unit short='kJ/g'
+         long='kilojoules per gram' />
+     <unit short='K'
+         long='kelvins' />
+     <unit short='MPa'
+         long='megapascals' />
+     <img src='https://www4c.wolframalpha.com/Calculate/MSP/MSP9635144b49gi5e0ca7e300002i5e1af2884d9ad1?MSPStoreType=image/gif&amp;s=48'
+         width='257'
+         height='110' />
+    </units>
+   </info>
+  </infos>
+ </pod>
+ <sources count='2'>
+  <source url='https://www4c.wolframalpha.com/sources/ChemicalDataSourceInformationNotes.html'
+      text='Chemical data' />
+  <source url='https://www4c.wolframalpha.com/sources/ElementDataSourceInformationNotes.html'
+      text='Element data' />
+ </sources>
+</queryresult>

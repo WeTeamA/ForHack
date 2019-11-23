@@ -142,12 +142,12 @@ public class Request : MonoBehaviour
         // var url = "http://api.wolframalpha.com/v2/query?input=NaCl&appid=K58ETV-GTPAJVATGW";
 
 
-        get_http_write("http://api.wolframalpha.com/v2/query?input=KCl&appid=K58ETV-GTPAJVATGW", "page3.xml");
+        get_http_write("http://api.wolframalpha.com/v2/query?input=H+%20+%20OH-&appid=K58ETV-GTPAJVATGW", "page4.xml");
 
-        FillArray(Substances, "page3.xml");
+        FillArray(Substances, "page4.xml");
 
 
-
+    
         /*
         for (int i = 0; i < Substances.Count; i++) //Заполнение массива
         {
