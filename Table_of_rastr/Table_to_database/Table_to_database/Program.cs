@@ -31,6 +31,34 @@ namespace ConsoleApp8
                 URL = s;
             }
             Console.WriteLine(URL);
+           // Console.ReadLine();
+
+            // Строка для хранения результата
+            string[] storageForResponse = new ;
+            // Читаем HTML-код сайта
+            string html = URL;
+            // Разбиваем строку на массив строк
+            string[] words = html.Split(new[] { ' ', ',', ':', '?', '\n', '\t', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+
+            for (int i = 0; i < words.Length; i++)
+            {
+                if (words[i] == "<tr>")
+                {
+                    if (i < words.Length - 1)
+                    {
+                        storageForResponse[i] += words[i + 1];
+                    }
+                    break;
+                }
+            }
+
+            Console.WriteLine("Начал отражать строчный массив"+ "\n" + "\n");
+
+            for (int i = 0; i < storageForResponse.Length; i++)
+            {
+                Console.WriteLine(storageForResponse[i] + "\n");
+
+            }
             Console.ReadLine();
         }
     }
